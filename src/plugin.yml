@@ -1,0 +1,11 @@
+name: SlashRemind
+main: com.battleasya.SlashRemind
+version: 1.0.0
+author: Dennie
+website: http://battleasya.com
+description: A simple remind plugin.
+commands:
+  remind:
+    description: Send reminder.
+  remindreload:
+    description: Reload config

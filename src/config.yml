@@ -1,0 +1,5 @@
+remind-syntax: "&cSyntax: /remind <name> <message>"
+no-permission: "&8(&4&l!&8) &6Unknown Command."
+remind-message: "&c%name% &7has been reminded for &f%message%&7."
+reload-config: "&cConfig Reloaded."
+remind-permission: "litebans.warn"
