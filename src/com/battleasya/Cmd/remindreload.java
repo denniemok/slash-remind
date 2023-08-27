@@ -17,7 +17,7 @@ public class remindreload implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String s, String[] args) {
 
-        if (sender.hasPermission(plugin.config.remindPermission)) {
+        if (sender.hasPermission("remind.reload")) {
             plugin.reloadConfig();
             plugin.config.fetchConfig();
             sender.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.config.reloadConfig));

@@ -9,3 +9,6 @@ commands:
     description: Send reminder.
   remindreload:
     description: Reload config
+permissions:
+  remind.reload:
+    default: op
