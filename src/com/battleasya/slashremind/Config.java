@@ -1,4 +1,4 @@
-package com.battleasya;
+package com.battleasya.slashremind;
 
 import org.bukkit.configuration.file.FileConfiguration;
 

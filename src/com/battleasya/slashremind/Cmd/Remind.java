@@ -1,6 +1,6 @@
-package com.battleasya.Cmd;
+package com.battleasya.slashremind.Cmd;
 
-import com.battleasya.SlashRemind;
+import com.battleasya.slashremind.SlashRemind;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -8,11 +8,11 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class remind implements CommandExecutor {
+public class Remind implements CommandExecutor {
 
     private final SlashRemind plugin;
 
-    public remind(SlashRemind plugin) {
+    public Remind(SlashRemind plugin) {
         this.plugin = plugin;
     }
 

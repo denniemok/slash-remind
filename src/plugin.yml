@@ -1,5 +1,5 @@
 name: SlashRemind
-main: com.battleasya.SlashRemind
+main: com.battleasya.slashremind.SlashRemind
 version: 1.0.0
 author: Dennie
 website: http://battleasya.com

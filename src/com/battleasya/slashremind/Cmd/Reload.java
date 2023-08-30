@@ -1,16 +1,16 @@
-package com.battleasya.Cmd;
+package com.battleasya.slashremind.Cmd;
 
-import com.battleasya.SlashRemind;
+import com.battleasya.slashremind.SlashRemind;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
-public class remindreload implements CommandExecutor {
+public class Reload implements CommandExecutor {
 
     private final SlashRemind plugin;
 
-    public remindreload(SlashRemind plugin) {
+    public Reload(SlashRemind plugin) {
         this.plugin = plugin;
     }
 
