@@ -1,7 +1,8 @@
 package com.battleasya.slashremind;
 
-import com.battleasya.slashremind.Cmd.Remind;
-import com.battleasya.slashremind.Cmd.Reload;
+import com.battleasya.slashremind.command.Remind;
+import com.battleasya.slashremind.command.Reload;
+import com.battleasya.slashremind.handler.Config;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class SlashRemind extends JavaPlugin {
