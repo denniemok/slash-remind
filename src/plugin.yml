@@ -1,14 +1,17 @@
 name: SlashRemind
 main: com.battleasya.slashremind.SlashRemind
-version: 1.0.0
+version: 1.0.1
 author: Dennie
 website: http://battleasya.com
-description: A simple remind plugin.
+description: Remind Extension
 commands:
   remind:
     description: Send reminder.
   remindreload:
-    description: Reload config
+    description: Reload config.
 permissions:
-  remind.reload:
+  remind.*:
     default: op
+    children:
+      remind.use: true
+      remind.reload: true
