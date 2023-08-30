@@ -1,8 +1,8 @@
-package com.battleasya.slashremind.Cmd;
+package com.battleasya.slashremind.command;
 
 import com.battleasya.slashremind.SlashRemind;
+import com.battleasya.slashremind.handler.Util;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -20,7 +20,7 @@ public class Remind implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String s, String[] args) {
 
         if(!sender.hasPermission(plugin.config.remindPermission)) {
-            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.config.noPermission));
+            Util.msgPlayer(sender, plugin.config.noPermission);
             return true;
         }
 
@@ -36,14 +36,18 @@ public class Remind implements CommandExecutor {
                     str.append(args[i]).append(" ");
                 }
 
-                Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&',plugin.config.remindMessage.replaceAll("%name%", p.getName()).replaceAll("%message%", str.toString())));
+                Util.broadcast(plugin.config.remindMessage
+                        .replaceAll("%name%", p.getName())
+                        .replaceAll("%message%", str.toString()));
                 return true;
 
+            } else {
+                Util.msgPlayer(sender, plugin.config.remindFailed);
             }
 
         }
 
-        sender.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.config.remindSyntax));
+        Util.msgPlayer(sender, plugin.config.incorrectSyntax);
         return true;
 
     }

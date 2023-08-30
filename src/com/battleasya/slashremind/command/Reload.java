@@ -1,7 +1,7 @@
-package com.battleasya.slashremind.Cmd;
+package com.battleasya.slashremind.command;
 
 import com.battleasya.slashremind.SlashRemind;
-import org.bukkit.ChatColor;
+import com.battleasya.slashremind.handler.Util;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -17,12 +17,12 @@ public class Reload implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String s, String[] args) {
 
-        if (sender.hasPermission("remind.reload")) {
+        if (sender.hasPermission(plugin.config.reloadPermission)) {
             plugin.reloadConfig();
             plugin.config.fetchConfig();
-            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.config.reloadConfig));
+            Util.msgPlayer(sender, plugin.config.reloadConfig);
         } else {
-            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.config.noPermission));
+            Util.msgPlayer(sender, plugin.config.noPermission);
         }
 
         return true;
