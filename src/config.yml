@@ -8,7 +8,9 @@ remind-failed: "&cError: &4You cannot remind that person."
 remind-permission: "remind.use"
 reload-permission: "remind.reload"
 
-incorrect-syntax: "&cSyntax: /remind <name> <message>"
+remind-syntax: "&cSyntax: /remind <name> <message>"
+reload-syntax: "&cSyntax: /remindreload"
+
 no-permission: "&8(&4&l!&8) &6Unknown Command."
 
 reload-config: "&6SlashRemind Config Reloaded."
