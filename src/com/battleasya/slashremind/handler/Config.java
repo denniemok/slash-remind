@@ -19,7 +19,9 @@ public class Config {
 
     public String reloadPermission;
 
-    public String incorrectSyntax;
+    public String remindSyntax;
+
+    public String reloadSyntax;
 
     public String noPermission;
 
@@ -35,7 +37,9 @@ public class Config {
         remindPermission = config.getString("remind-permission");
         reloadPermission = config.getString("reload-permission");
 
-        incorrectSyntax = config.getString("incorrect-syntax");
+        remindSyntax = config.getString("remind-syntax");
+        reloadSyntax = config.getString("reload-syntax");
+
         noPermission = config.getString("no-permission");
 
         reloadConfig = config.getString("reload-config");
