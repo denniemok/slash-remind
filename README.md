@@ -16,6 +16,8 @@
 ### Introduction
 This is a minimalist plugin with exactly one function: Enables the issuing of gentle reminders as an alternative to strict warnings. Nothing fancy or complicated is involved. It only does the simplest task you ask for, and hence the performance. <p>
 
+This plugin was initially made as a little extension to Litebans.
+
 <hr>
 
 ### Runtime Requirements
