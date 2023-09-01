@@ -20,7 +20,7 @@ public class Remind implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String s, String[] args) {
 
         if(!sender.hasPermission(plugin.config.remindPermission)) {
-            Util.msgPlayer(sender, plugin.config.noPermission);
+            Util.sendMessage(sender, plugin.config.noPermission);
             return true;
         }
 
@@ -42,12 +42,12 @@ public class Remind implements CommandExecutor {
                 return true;
 
             } else {
-                Util.msgPlayer(sender, plugin.config.remindFailed);
+                Util.sendMessage(sender, plugin.config.remindFailed);
             }
 
         }
 
-        Util.msgPlayer(sender, plugin.config.incorrectSyntax);
+        Util.sendMessage(sender, plugin.config.remindSyntax);
         return true;
 
     }
