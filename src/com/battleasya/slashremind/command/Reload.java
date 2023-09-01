@@ -17,12 +17,17 @@ public class Reload implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String s, String[] args) {
 
-        if (sender.hasPermission(plugin.config.reloadPermission)) {
+        if (!sender.hasPermission(plugin.config.reloadPermission)) {
+            Util.sendMessage(sender, plugin.config.noPermission);
+            return true;
+        }
+
+        if (args.length == 0) {
             plugin.reloadConfig();
             plugin.config.fetchConfig();
-            Util.msgPlayer(sender, plugin.config.reloadConfig);
+            Util.sendMessage(sender, plugin.config.reloadConfig);
         } else {
-            Util.msgPlayer(sender, plugin.config.noPermission);
+            Util.sendMessage(sender, plugin.config.reloadSyntax);
         }
 
         return true;
