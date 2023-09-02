@@ -14,21 +14,21 @@
 <hr>
 
 ### Introduction
-This is a minimalist plugin with exactly one function: Enables the issuing of gentle reminders as an alternative to strict warnings. Nothing fancy or complicated is involved. It only does the simplest task you ask for, and hence the performance. <p>
+This is a minimalist plugin with exactly one function: Enables the issuing of gentle reminders as an alternative to strict warnings. Nothing fancy or complicated is involved. It only does the simplest task you ask for, and hence the performance.
 
-This plugin was initially made as a little extension to Litebans.
+Originally being part of [BattleAsya Utility](https://github.com/denniemok/battleasya-utility), this plugin at first was made as a little extension to Litebans, now made available separately with enhanced configurability.
 
 <hr>
 
 ### Runtime Requirements
 - Java 8 or above
-- Spigot 1.8 or above, or equivalent forks <br>
+- Spigot 1.8 or above, or equivalent forks
 
 <hr>
 
 ### Build Dependencies
 - Java 8
-- Spigot API 1.8.8 R0.1 <br>
+- Spigot-API 1.8.8 R0.1
 
 <hr>
 
